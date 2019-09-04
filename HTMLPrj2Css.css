@@ -1,0 +1,385 @@
+        body {
+             background-color: black;
+		     color: white;
+		     }
+
+		.tributeTitle {
+             font-size: 20px;
+     	     text-align: center;   
+             border-style: solid;
+             border-width: 5px;
+		     border-right-color: yellow;
+		     border-left-color: yellow;
+			 -webkit-animation: glow 1s ease-in-out infinite alternate;
+             -moz-animation: glow 1s ease-in-out infinite alternate;
+             animation: glow 1s ease-in-out infinite alternate;
+		     }
+			 
+        @-webkit-keyframes glow {
+        from {
+              text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c4ff4d, 0 0 40px #c4ff4d, 0 0 50px #88cc00, 0 0 60px #88cc00, 0 0 70px #88cc00;
+             } 
+        to {
+              text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+            }
+        }			 
+
+        .projectHdr2Items{
+		     display: grid;
+			 grid-template-columns: auto auto 1fr auto auto auto auto auto;
+			 grid-template-rows: 1fr;
+			 grid-template-areas: 
+			     "surveryFormElem1Mnu"
+				 "surveyFormElem1Ico"
+				 "surveyFormElem1Search"				 
+				 "surveyFormElem1Btn1"
+				 "surveyFormElem1Btn2"
+				 "surveyFormElem1Btn3"
+				 "surveyFormElem1Btn4"
+				 "surveyFormElem1SignIn";							
+		     }
+			 
+        .srvyFrmEleSearch {
+		     grid-area: "surveyFormElem1Search";	
+			 height: 20px;    
+             background-color: green;		             	 
+             }		
+			 
+        .MTlogo {
+		     max-width: 100%;		 
+		     max-height: 100%;			 
+		     }
+
+        .HOMElogo {
+		     max-width: 100%;		 
+		     max-height: 100%;
+		     }
+			 
+		.searchBox{
+		     width: 300px;		 
+		     max-height: 100%;
+		     }
+			 
+		.F1logo{
+		     max-width: 100%;		 
+		     max-height: 100%;
+		     }
+			 
+		.F2logo{
+		     max-width: 100%;		 
+		     max-height: 100%;
+		     }
+			 
+		.F3logo{
+		     max-width: 100%;		 
+		     max-height: 100%;
+		     }
+			 
+		.F4logo{
+		     max-width: 100%;		 
+		     max-height: 100%;
+		     }
+			 
+		.SIGNINlogo {
+		     max-width: 100%;		 
+		     max-height: 100%;
+		     }
+			 
+		.SearchIco {             
+			 width: 30px;
+			 height: 20px;             
+			 }		
+			 
+        .srvyFrmEle1Mnu{
+             grid-area: "surveryFormElem1Mnu";		     
+			 width: 30px;
+			 height: 20px;
+			 cursor: pointer;
+			 }
+			 
+        .srvyFrmEle1Ico{
+             grid-area: "surveyFormElem1Ico";
+             width: 55px;			 
+			 height: 20px;			
+			 cursor: pointer;
+		     }
+
+		.srvyFrmEle1Btn1 {
+             grid-area: "surveyFormElem1Btn1";		     
+			 width: 30px;
+			 height: 20px;	
+             cursor: pointer;			 
+		     }
+			 
+		.srvyFrmEle1Btn2 {
+             grid-area: "surveyFormElem1Btn2";		     
+			 width: 30px;
+			 height: 20px;		
+			 cursor: pointer;
+		     }
+			 
+		.srvyFrmEle1Btn3 {
+             grid-area: "surveyFormElem1Btn3";		     
+			 width: 30px;
+			 height: 20px;		
+		     cursor: pointer;
+			 }
+			 
+		.srvyFrmEle1Btn4 {
+             grid-area: "surveyFormElem1Btn4";		     
+			 width: 30px;
+			 height: 20px;		
+		     cursor: pointer;
+			 }
+			 			 
+        .srvyFrmEle1SignIn{
+             grid-area: "surveyFormElem1SignIn";				
+			 width: 80px;
+			 height: 20px;
+			 cursor: pointer;
+		     }						
+			 				
+        .topHeaderElements{
+             display: grid;
+		     grid-template-columns: auto 1fr auto;
+		     grid-template-rows: 1fr;		
+		     grid-template-areas:
+		     "HeaderFirst"
+		     "HeaderSecond"
+		     "HeaderThird";
+		     }		
+		
+        .topHeaderEleFirst{
+		     grid-area: "HeaderFirst";
+		     width: 20px;
+		     background: lightgreen;
+		     }
+		
+		.topHeaderEleSecond{
+		     grid-area: "HeaderSecond"; 		
+		     background: pink;
+		     }
+
+		.topHeaderEleThird{
+             grid-area: "HeaderThird";
+             width: 20px;		
+		     background: lightgreen;
+		     }
+		
+        .description{
+		
+		     }		
+
+        .btn {
+             background-color: lightgreen;
+             border: none;
+             color: white;
+             width:80px;
+             font-size: 20px;
+             cursor: pointer;
+			 border-radius: 20px;
+			 box-shadow: 2px 9px #999;
+             } 
+
+        .btn:hover {
+		     background-color: #3e8e41;
+			 box-shadow: 2px 5px #999;
+			 }
+			 
+        .btn:active {
+		     background-color: red;
+			 box-shadow: 2px 3px #999;
+			 }
+			 
+        .surveyFormSignIn{
+             display: grid;
+		     grid-template-columns: 60px 300px 60px 300px 100px;
+		     grid-template-rows: 1fr;		
+		     grid-gap: 1px;
+			 grid-template-areas:
+		     "surveyFormSignInName"
+			 "surveyFormSignInNameInp"
+		     "surveyFormSignInEmail"
+			 "surveyFormSignInEmailInp"
+			 "surveyFormSignInBtn";
+             }					 
+		
+		.siNamelabel{
+             grid-area: "surveyFormSignInName";		
+			 background: lightblue;
+             }		
+			 
+	    .siEmaillabel {
+             grid-area: "surveyFormSignInEmail";		
+			 background: red;		
+		     }
+			 
+		.siNameInp {
+			 grid-area: "surveyFormSignInNameInp";
+			 width: 290px;		
+             }		
+
+		.siEmailInp {
+			 grid-area: "surveyFormSignInEmailInp";
+		     width: 290px;
+             }				        			
+     
+        #signInbtn{
+		    grid-area: "surveyFormSignInBtn";	
+			color: black;
+            width: 90px;						 
+     		}        
+		
+        #survey-form {
+			 background-color: #c6ecd9;
+			 border-radius: 40px;		             			 
+			 color: #ff4d4d;
+			 display: grid;
+			 padding: 30px;
+		     grid-template-columns: 1fr;
+             grid-template-rows: 1fr;
+			 grid-gap: 10px;
+             grid-template-areas: 
+			     "frmInput"
+		         "frmSubmit";
+		    }			
+			
+        .entry-group1{
+			 grid-area: "frmInput";			 
+		     display: grid;
+		     grid-template-columns: 1fr auto 1fr;
+             grid-template-rows: 1fr;
+             grid-template-areas: 
+			     "srvyFrmLblGrp"
+		         "srvyFrmCntrGrp"
+			     "srvyFrmSlctGrp";							
+		     }
+			 
+		#submit{
+			 grid-area: "frmSubmit";
+		     justify-self: center;
+			 height: 30px;
+			 }
+			 
+		.label-group{		     
+		     grid-area: "srvyFrmLblGrp";
+			 justify-self: right;
+			 display: grid;
+		     grid-template-columns: 1fr;
+             grid-template-rows: 40px 42px 42px 35px 40px 140px 40px;;
+             grid-template-areas: 
+			     "srvyFrmLblGrpName"
+		         "srvyFrmLblGrpEmail"
+			     "srvyFrmLblGrpNumber"
+				 "srvyFrmLblGrpDrpDwn"
+				 "srvyFrmLblGrpRadioBtn"
+				 "srvyFrmLblGrpChkBox"
+				 "srvyFrmLblAddInfo";
+		     }
+			 
+        #name-label{             
+			 font-size: 20px;	
+             text-align: right;	
+			 height: 20px;
+             grid-area: "srvyFrmLblGrpName";			 
+		     }
+
+		#email-label{		             
+			 font-size: 20px;	
+             text-align: right;			 			 
+			 grid-area: "srvyFrmLblGrpEmail";			 
+			 }
+					 
+		#number-label{		             
+			 font-size: 20px;	
+             text-align: right;			 			 
+			 grid-area: "srvyFrmLblGrpNumber";			 
+			 }
+
+		#dropDwn-label{		             
+			 font-size: 20px;	
+             text-align: right;			 			 
+			 grid-area: "srvyFrmLblGrpDrpDwn";			 
+			 }
+			 
+		#radioBtn-label{		             
+			 font-size: 20px;	
+             text-align: right;			 			 
+			 grid-area: "srvyFrmLblGrpRadioBtn";			 
+			 }
+			 
+		#chkBox-label{		             
+			 font-size: 20px;	
+             text-align: right;			 			 
+			 grid-area: "srvyFrmLblGrpChkBox";					 
+			 }
+			 
+	    .add-info{
+			 font-size: 20px;	
+             text-align: right;
+			 grid-area: "srvyFrmLblAddInfo";				 
+		     }   
+		
+	    .center-group{
+		     grid-area: "srvyFrmCntrGrp";
+			 padding: 10px;
+			 }			 
+		
+	    .select-group{
+		     grid-area: "srvyFrmSlctGrp";
+			 justify-self: left;
+			 display: grid;
+		     grid-template-columns: 1fr;
+             grid-template-rows: 40px 40px 40px 40px 40px 100px 40px;
+             grid-template-areas: 
+			     "srvyFrmSltGrpName"
+		         "srvyFrmSltGrpEmail"
+			     "srvyFrmSltGrpNumber"
+				 "srvyFrmSltGrpDrpDwn"
+				 "srvyFrmSltGrpRadioBtn"
+				 "srvyFrmSltGrpChkBox"
+				 "srvyFrmSltAddInfo";			 
+		     }
+
+		#name{		     		     
+			 font-size: 20px;			 		 
+             height: 20px;			 
+			 width: 320px;
+			 grid-area: "srvyFrmSltGrpName";		
+			 }		
+			 
+		#email{		     			 			 
+			 font-size: 20px;			 		 
+             height: 20px;
+             width: 320px;			 
+			 grid-area: "srvyFrmSltGrpEmail";		
+			 }
+			 
+		#number{		  
+			 font-size: 20px;			 		 
+             height: 20px;
+			 width: 80px;
+			 grid-area: "srvyFrmSltGrpNumber";		
+			 }			 			 
+			 
+         #dropdown{		             			 
+		 	 font-size: 20px;			 		 
+             height: 30px;
+			 text-align: right;
+			 width: 160px;
+			 grid-area: "srvyFrmSltGrpDrpDwn";		
+			 }			 
+			 
+         #radioBtns{		             			 	
+             grid-area: "srvyFrmSltGrpRadioBtn";
+			 }			 			 
+
+         #checkBox-group{		             			 
+			 grid-area: "srvyFrmSltGrpChkBox";		
+			 height: 100px;
+			 }			 			 			 
+			 
+		.txtArea{
+		     grid-area: "srvyFrmSltAddInfo";					 
+			 }			 			 			 
+	
